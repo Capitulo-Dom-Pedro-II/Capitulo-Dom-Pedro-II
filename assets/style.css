@@ -1,0 +1,31 @@
+body {
+  background: rgb(190,3,7);
+  background: radial-gradient(circle, rgba(190,3,7,1) 50%, rgba(114,0,0,1) 100%);
+}
+
+:root {
+  --primary: #9F2221;
+  --secondary: #141313;
+  --destaque: #DDAC6E;
+  --grey: #99A9BF;
+  --grey-secondary: #F3F5F4;
+}
+
+.main {
+  margin-top: 20px;
+}
+
+.main .btn-destaque {
+  border-radius: 4px;
+  background-color: var(--secondary);
+  color: #fff;
+  transition: 0.5s;
+  font-weight: 500;
+}
+
+.main .btn-destaque:hover {
+  color: var(--secondary);
+  background-color: var(--destaque);
+  transition: 0.5s;
+  font-weight: 500;
+}
