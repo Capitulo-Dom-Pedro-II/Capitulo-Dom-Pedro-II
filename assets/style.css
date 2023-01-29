@@ -12,7 +12,7 @@ body {
   width: auto; 
   height: auto; 
   z-index: -1000;
-  background: url(images/torre.jpg) no-repeat;
+  background: url(/assets/img/ordem-demolay.png) no-repeat;
   background-size: cover; 
   opacity: 0.3;
 }
