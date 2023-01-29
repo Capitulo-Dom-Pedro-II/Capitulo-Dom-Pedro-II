@@ -3,6 +3,20 @@ body {
   background: radial-gradient(circle, rgba(190,3,7,1) 50%, rgba(114,0,0,1) 100%);
 }
 
+.bg_video{
+  position: fixed; 
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto; 
+  z-index: -1000;
+  background: url(images/torre.jpg) no-repeat;
+  background-size: cover; 
+  opacity: 0.3;
+}
+
 :root {
   --primary: #9F2221;
   --secondary: #141313;
@@ -12,20 +26,69 @@ body {
 }
 
 .main {
-  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logos-demolays-bottom {
+  position: absolute; opacity: 0.1; max-width: 400px; right: 0; bottom: 0;
+}
+.logos-demolays-top {
+  position: absolute; opacity: 0.1; max-width: 400px; left: 0; top: 0;
+}
+
+@media (max-width: 568px) {
+  .logos-demolays-top {
+    display: none;
+  }
+  .logos-demolays-bottom {
+    display: none;
+  }
 }
 
 .main .btn-destaque {
-  border-radius: 4px;
-  background-color: var(--secondary);
+  display: grid;
   color: #fff;
   transition: 0.5s;
   font-weight: 500;
+  min-height: 90px;
+  min-width: 140px;
+  border-radius: 12px;
+  align-items: center;
+  background-color: var(--secondary);
+  transform: scale(1);
 }
 
 .main .btn-destaque:hover {
+  transform: scale(1.05);
+  font-weight: 500;
+  border-width: 2px;
   color: var(--secondary);
+  border-color: var(--secondary);
   background-color: var(--destaque);
+}
+
+.main .btn-destaque-modal {
+  display: flex;
+  gap: 12px;
+  color: #fff;
   transition: 0.5s;
   font-weight: 500;
+  min-height: 90px;
+  min-width: 140px;
+  border-radius: 12px;
+  align-items: center;
+  background-color: var(--secondary);
+  transform: scale(1);
+}
+
+.main .btn-destaque-modal:hover {
+  transform: scale(1.05);
+  font-weight: 500;
+  border-width: 2px;
+  color: var(--secondary);
+  border-color: var(--secondary);
+  background-color: var(--destaque);
 }
